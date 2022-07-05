@@ -14,7 +14,7 @@ interface props {
 const InputTextWithIcon = (props:props) => {
     return (
         <div className={props.divClassName}>
-            <img className={props.labelClassName} src={require('./tick_icon.svg')} alt="text" />
+            <img className={props.labelClassName}  src={require('./tick_icon.svg')} alt="text" />
             <input
             type={props.type}
             value={props.value}
