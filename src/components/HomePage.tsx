@@ -7,9 +7,17 @@ import SingleSelect from './SingleSelect/SingleSelect';
 import CheckBox from './Checkbox/CheckBox';
 import InputTag from "./InputTag/CInputTag";
 import RangePicker from './DatePickerr/RangePicker';
-
+import InputText from './InputText';
+import ToggleSwitchComponent from './ToggleSwith';
+import RadioButtonComponent from './RadioButton';
+import InputTextWithIcon from './InputTextWithIcon';
 export function HomePage(){
 
+  const Radios = [
+    { value: 'ValueA', key: 'KeyA', name: 'Name A' },
+    { value: 'ValueB', key: 'KeyB', name: 'Name B' },
+    { value: 'ValueC', key: 'KeyC', name: 'Name C' }
+  ];
 
     const onBack=()=>{
         alert('backkk')
@@ -175,6 +183,39 @@ export function HomePage(){
             })}
             <InputTag />
             <RangePicker />
+            <InputText type="text"
+              placeholder="Product Name"
+              label="Name:" 
+              divClassName='input-group'
+              labelClassName='input-group-text'
+              inputClassName='form-control'
+              name="name"/>
+         <br />
+          
+         <ToggleSwitchComponent 
+         label="Notifications"
+         />
+         <br />
+         <InputTextWithIcon 
+         type="text"
+         placeholder="Product Name"
+         divClassName='input-group'
+         labelClassName='input-group-text'
+         inputClassName='form-control'
+         name="tick_icon"
+         />
+         <div>
+        {Radios.map(item=>(
+           <RadioButtonComponent
+            type="radio"
+            label={item.name}
+             value={item.value} 
+             key={item.key} 
+              
+           />
+           )
+         )}
+      </div>
         </div>
     )
 
