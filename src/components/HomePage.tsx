@@ -163,7 +163,6 @@ export function HomePage(){
 
     return(  
         <div>
-            <h5>parentComponent</h5>
             <ButtonComponent handleClick={onBack} buttonText={'Back'} className={'btn-outline-danger'} />
             <AnchorTag buttonText={'Back'} className={'btn-outline-danger'} link={'https://reactjs.org/docs/context.html'} linkOpened={'_blank'}/>
             <CInput onChangeValue={inputVal} inputType= 'text' inputPlaceholder='fName'></CInput>
