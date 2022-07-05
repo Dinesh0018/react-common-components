@@ -19,7 +19,7 @@ const RadioButtonComponent = (props:props) => {
                 value={props.value}
                 name={props.name}
                 className={props.inputClassName}
-                onChange= {props.onChange}
+                onChange=  {props.onChange}
                 />
             {props.label}</label>
         </div>

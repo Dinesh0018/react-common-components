@@ -196,7 +196,7 @@ export function HomePage(){
          label="Notifications"
          />
          <br />
-         <InputTextWithIcon 
+          <InputTextWithIcon 
          type="text"
          placeholder="Product Name"
          divClassName='input-group'

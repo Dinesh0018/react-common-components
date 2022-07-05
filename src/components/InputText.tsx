@@ -14,7 +14,7 @@ interface props {
 const InputText = (props:props) => {
     return (
         <div className={props.divClassName}>
-            <label className={props.labelClassName}>{props.label}</label>
+            <label className={props.labelClassName}> {props.label}</label>
             <input
             type={props.type}
             value={props.value}

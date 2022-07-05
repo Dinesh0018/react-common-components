@@ -11,7 +11,7 @@ interface Props {
           name={props.label} id={props.label} />
         <label className="label" htmlFor={props.label}>
           <span className="inner" />
-          <span className="switch" />
+          <span  className="switch" />
         </label>
       </div>
     </div>
