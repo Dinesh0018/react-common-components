@@ -11,7 +11,7 @@ interface props {
     onChange?:()=>void;
     
 }
-const InputText = (props:props) => {
+const InputText  = (props:props) => {
     return (
         <div className={props.divClassName}>
             <label className={props.labelClassName}> {props.label}</label>
